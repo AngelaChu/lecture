@@ -1,0 +1,14 @@
+1. 4*2.4GHz * 8 * 12 = 921.6 GFLOPS
+URL that gets the parameters: https://en.wikipedia.org/wiki/FLOPS, http://ark.intel.com/products/83352/Intel-Xeon-Processor-E5-2620-v3-15M-Cache-2_40-GHz
+
+2.Peak flop rate for my own mechine:  4 * 1.3GHz * 4 = 20.8 GFLOPS
+
+3.p + t - 1
+
+4. 1 + 0.5 + 0.25 + 0.5 + 0.5 = 2.75 hr for serial time
+   1 + 0.5 + 0.25 + 0.5 = 2.25 hr for parallel time
+
+5.The cache has the highest performance when stride is 2^15 bytes and the size is 2^24 bytes. Thus, it might be a 8-way cache.
+
+7.The second and the third ways are faster because they calculate x and y seperately and there is no dependency between the calculations.
+
