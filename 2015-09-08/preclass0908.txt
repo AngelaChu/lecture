@@ -1,0 +1,13 @@
+1.Since 16N is signficantly larger than the size of cache, almost all the data will be the cold-start when need certain data. Therefore, memory-based AI will be (# flops)/(N * N * 16N). For our cluster, it will be about 960 GFLOPS/(16N^3).
+
+2.The # bytes trasferred between memory and cache will be (8N^2 + (8N^2 - size of cache)), and then use #flops/#bytes to get the AI.
+
+3.8N^2 + 8N^2 = 16N^2
+
+4.The largest N that will fit in each cache will be (32000/8)^(1/2) = 20, (256000/8)^(1/2) = 178, (6000000/8)^(1/2) = 866. The # flops of the CPU is 4 * 4 * 2.4GHz = 38 GFLOPS,so the arithmetic intensity will be 38G/32K = 1.2 million, 38G/256K = 0.15 million, 38G/6M = 6333.
+
+5.4 * 8 * 2.4 / 25.6 = 3
+
+6.8 * 4 * 2.4G / 3 / 8 = 3.2 billion, so when the N is greater than 3.2 billion, it will be CPU-bound.
+
+7.The plot will keeping rising to a point and then becomes relatively constant.      
