@@ -1,0 +1,5 @@
+2. For two cores, we need a operating-system level control to switch between threads, but for hyperthreading core we do not need to switch since the threads are just scheduled into same CPU functional units.
+
+3.Each core is attached to a memory cache, so it is non-uniform.
+
+4.The speed up will be less than 50 percent.
