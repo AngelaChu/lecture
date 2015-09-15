@@ -1,0 +1,7 @@
+1.I spent 3 hours on this exercies.
+
+2.I feel the explaination of particle-mesh methods is not very clear.
+
+3.We can divide the board into small blocks and let them run independently and block some blocks when the communication is needed. For example, if any two blocks need to communicate, the two blocks will be blocked and they will be put into the dynamic schedule.
+
+5.It needs locks and schedules since the particles from different processors may apply force at the same time. It may cause errors if there is no locks. 
